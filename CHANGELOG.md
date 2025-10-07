@@ -210,6 +210,6 @@ Free to use for personal and commercial projects.
 
 ---
 
-**For questions or support, contact: info@indonesiaforklift.com**
+**For questions or support, contact: info@rajaforklift.id**
 
 *Last Updated: January 6, 2025*

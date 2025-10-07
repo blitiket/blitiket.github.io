@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://indonesiaforklift.com/sitemap.xml
+Sitemap: https://rajaforklift.id/sitemap.xml

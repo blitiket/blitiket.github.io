@@ -24,10 +24,10 @@
     "type": "git",
     "url": "https://github.com/yourusername/indonesia-forklift.git"
   },
-  "homepage": "https://indonesiaforklift.com",
+  "homepage": "https://rajaforklift.id",
   "bugs": {
     "url": "https://github.com/yourusername/indonesia-forklift/issues",
-    "email": "info@indonesiaforklift.com"
+    "email": "info@rajaforklift.id"
   },
   "devDependencies": {},
   "dependencies": {}

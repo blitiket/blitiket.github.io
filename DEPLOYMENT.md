@@ -306,7 +306,7 @@ Tambahkan di `.htaccess`:
 ## 📞 Support
 
 Untuk bantuan deployment, hubungi:
-- Email: support@indonesiaforklift.com
+- Email: support@rajaforklift.id
 - WhatsApp: +62 812 3456 7890
 
 ---
