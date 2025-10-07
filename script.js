@@ -135,8 +135,37 @@ function renderPDFPreview() {
     }
 }
 
+// Image Lazy Loading with Blur Effect
+function initImageLoading() {
+    const images = document.querySelectorAll('img');
+    
+    images.forEach(img => {
+        // Add loading class initially
+        img.classList.add('loading');
+        
+        // If image is already cached/loaded
+        if (img.complete) {
+            img.classList.remove('loading');
+            img.classList.add('loaded');
+        } else {
+            // Add load event listener
+            img.addEventListener('load', function() {
+                this.classList.remove('loading');
+                this.classList.add('loaded');
+            });
+            
+            // Add error event listener
+            img.addEventListener('error', function() {
+                this.classList.remove('loading');
+                this.classList.add('loaded');
+            });
+        }
+    });
+}
+
 // Initialize PDF preview when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    initImageLoading();
     renderPDFPreview();
 });
 

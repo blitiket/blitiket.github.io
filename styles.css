@@ -1569,6 +1569,21 @@ section {
     transform: translateX(5px);
 }
 
+/* Image Loading Effect */
+img {
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+img.loading {
+    filter: blur(10px);
+    opacity: 0.6;
+}
+
+img.loaded {
+    filter: blur(0);
+    opacity: 1;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
