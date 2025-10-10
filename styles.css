@@ -326,12 +326,27 @@ body.menu-open {
 }
 
 .hero-title {
-    font-size: 52px;
+    font-size: 72px;
     color: var(--white);
     margin-bottom: 15px;
-    font-weight: 700;
-    animation: fadeInUp 1s ease;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+    letter-spacing: 2px;
+    animation: heroTitleAnimation 1.5s ease-out;
+    text-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(255, 107, 0, 0.3),
+        0 0 50px rgba(255, 107, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.hero-title:hover {
+    transform: scale(1.05);
+    text-shadow: 
+        0 6px 30px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(255, 107, 0, 0.5),
+        0 0 60px rgba(255, 107, 0, 0.3),
+        0 0 80px rgba(255, 107, 0, 0.2);
 }
 
 .hero-subtitle {
@@ -1625,6 +1640,29 @@ img.loaded {
     }
 }
 
+@keyframes heroTitleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(-10px) scale(1.05);
+    }
+    70% {
+        transform: translateY(5px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        text-shadow: 
+            0 4px 20px rgba(0, 0, 0, 0.5),
+            0 0 30px rgba(255, 107, 0, 0.3),
+            0 0 50px rgba(255, 107, 0, 0.2);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .container {
@@ -1632,7 +1670,8 @@ img.loaded {
     }
 
     .hero-title {
-        font-size: 42px;
+        font-size: 52px;
+        letter-spacing: 1.5px;
     }
 
     .hero-subtitle {
@@ -1781,10 +1820,11 @@ img.loaded {
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 42px;
         line-height: 1.2;
         margin-bottom: 12px;
-        font-weight: 700;
+        font-weight: 800;
+        letter-spacing: 1px;
     }
 
     .hero-subtitle {
@@ -2141,10 +2181,11 @@ img.loaded {
     }
 
     .hero-title {
-        font-size: 28px;
+        font-size: 36px;
         line-height: 1.2;
-        font-weight: 700;
+        font-weight: 800;
         margin-bottom: 10px;
+        letter-spacing: 0.5px;
     }
 
     .hero-subtitle {
