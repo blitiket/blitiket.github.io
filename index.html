@@ -37,7 +37,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     
     <title>Raja Forklift - Distributor Forklift Terpercaya</title>
-    <link rel="stylesheet" href="styles.css?v=1.0.32">
+    <link rel="stylesheet" href="styles.css?v=1.0.33">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
@@ -463,7 +463,7 @@
                 <p class="section-subtitle">Artikel-artikel yang bisa menambah wawasan anda tentang dunia forklift.</p>
             </div>
             <div class="articles-grid">
-                <article class="article-card">
+                <article class="article-card" data-article="1">
                     <div class="article-image">
                         <img src="images/articles/Scissor-Lift.webp" alt="Scissor Lift" onerror="this.parentElement.innerHTML='<div class=\'article-placeholder\'><i class=\'fas fa-newspaper\'></i></div>'">
                     </div>
@@ -471,10 +471,10 @@
                         <div class="article-category">SCISSOR LIFT</div>
                         <h3>Panduan Lengkap Memilih Scissor Lift yang Tepat untuk Proyek Anda</h3>
                         <p>Scissor lift adalah jenis alat angkat vertikal yang digunakan untuk...</p>
-                        <a href="#" class="article-read-more open-whatsapp-modal">Read More</a>
+                        <a href="#" class="article-read-more" data-article-id="1">Read More</a>
                     </div>
                 </article>
-                <article class="article-card">
+                <article class="article-card" data-article="2">
                     <div class="article-image">
                         <img src="images/articles/Memilih-alat-angkut.webp" alt="Cold Storage" onerror="this.parentElement.innerHTML='<div class=\'article-placeholder\'><i class=\'fas fa-newspaper\'></i></div>'">
                     </div>
@@ -482,10 +482,10 @@
                         <div class="article-category">INFORMATION</div>
                         <h3>Memilih Alat Angkut yang Tepat untuk Gudang Cold Storage</h3>
                         <p>Untuk kebutuhan Pemindahan barang yang cocok untuk cold storage, Heli...</p>
-                        <a href="#" class="article-read-more open-whatsapp-modal">Read More</a>
+                        <a href="#" class="article-read-more" data-article-id="2">Read More</a>
                     </div>
                 </article>
-                <article class="article-card">
+                <article class="article-card" data-article="3">
                     <div class="article-image">
                         <img src="images/articles/Rajanya-Forklift.webp" alt="Forklift Diesel" onerror="this.parentElement.innerHTML='<div class=\'article-placeholder\'><i class=\'fas fa-newspaper\'></i></div>'">
                     </div>
@@ -493,7 +493,7 @@
                         <div class="article-category">FORKLIFT</div>
                         <h3>HELI Rajanya Forklift Diesel – Kekuatan dan Keandalan dalam Dunia Industri</h3>
                         <p>HELI Forklift diesel telah menjadi pilihan utama di berbagai sektor...</p>
-                        <a href="#" class="article-read-more open-whatsapp-modal">Read More</a>
+                        <a href="#" class="article-read-more" data-article-id="3">Read More</a>
                     </div>
                 </article>
             </div>
@@ -584,7 +584,7 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Float Button -->
     <a href="https://wa.me/6282327550005?text=Halo%20Raja%20Forklift,%20Saya%20ingin%20bertanya%20tentang%20produk%20dan%20layanan.%20Terima%20kasih." class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -618,6 +618,21 @@
         </div>
     </div>
 
-    <script src="script.js?v=1.0.32"></script>
+    <!-- Article Detail Modal -->
+    <div class="article-modal" id="articleModal">
+        <div class="article-modal-overlay" id="articleModalOverlay"></div>
+        <div class="article-modal-content">
+            <button class="article-modal-close" id="articleModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="article-modal-body">
+                <div class="article-modal-category" id="articleModalCategory"></div>
+                <h2 class="article-modal-title" id="articleModalTitle"></h2>
+                <div class="article-modal-text" id="articleModalText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.0.34"></script>
 </body>
 </html>
