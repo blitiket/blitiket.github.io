@@ -245,22 +245,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll to Top Button
-const scrollTopBtn = document.getElementById('scrollTop');
+// WhatsApp Floating Button
+const whatsappFloat = document.getElementById('whatsappFloat');
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 300) {
-        scrollTopBtn.classList.add('visible');
+        whatsappFloat.classList.add('visible');
     } else {
-        scrollTopBtn.classList.remove('visible');
+        whatsappFloat.classList.remove('visible');
     }
-});
-
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 });
 
 // Contact Form removed - no form handling needed
