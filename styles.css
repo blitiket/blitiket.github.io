@@ -573,7 +573,7 @@ section {
     stroke-linecap: round;
     stroke-dasharray: 600;
     stroke-dashoffset: 600;
-    animation: drawCircle 2s ease-out forwards;
+    animation: drawCircle 3s ease-in-out infinite;
     animation-delay: 0.5s;
     opacity: 0.9;
 }
@@ -586,9 +586,21 @@ section {
     10% {
         opacity: 1;
     }
-    100% {
+    45% {
         stroke-dashoffset: 0;
         opacity: 1;
+    }
+    55% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    90% {
+        stroke-dashoffset: 600;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 600;
+        opacity: 0;
     }
 }
 
@@ -2152,7 +2164,7 @@ img.loaded {
     
     /* Mobile scale for forklift electric */
     .img-forklift-electric {
-        transform: scale(1.2);
+        transform: scale(1.0);
     }
     
     /* Mobile scale for wheel loader */
