@@ -616,46 +616,46 @@ const productModalCategory = document.getElementById('productModalCategory');
 const productModalTitle = document.getElementById('productModalTitle');
 const productModalText = document.getElementById('productModalText');
 
-// Dummy products data (will be replaced with real data later)
+// Products data
 const productsData = {
     1: {
         category: 'Scissor Lift',
         title: 'Scissor Lift LCM',
         content: `
-            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Scissor Lift LCM.</p>
-            <p>Scissor lift LCM Scissorlift merupakan alat yang bisa digunakan untuk berbagai keperluan industri dan konstruksi.</p>
+            <p>Scissorlift merupakan alat yang bisa digunakan untuk aplikasi pekerjaan pada ketinggian tertentu seperti perawatan gedung, proyek konstruksi mechanical & electrical, warehouse, pabrik dan bangunan retail. Scissorlift bergerak vertikal seperti gunting atau biasa disebut "pentograph" disertai platform untuk pijakan membawa pekerja, operator serta material peralatan yang diperlukan sesuai rekomendasi alat.</p>
+            <p>Sehingga pekerjaan menjadi lebih aman, efektif, efisien dan aplikatif. Namun lebih utama lagi, pembelian equipment tersebut harus dengan harga yang kompetitif.</p>
         `
     },
     2: {
         category: 'Forklift Diesel',
         title: 'Forklift Big 5-10 Ton',
         content: `
-            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Forklift Big 5-10 Ton.</p>
-            <p>Forklift HELI adalah merk Forklift nomor 1 di China dan telah terbukti kualitasnya di berbagai industri.</p>
+            <p>Forklift HELI adalah merk Forklift nomor 1 di China dan nomor 7 di Top ranking 20 besar jajaran Forklift dunia.</p>
+            <p>Di semua lini kegiatan industri, tentunya memerlukan alat angkat untuk mempermudah kegiatan loading-unloading sehingga operasional pekerjaan tersebut menjadi Efektif, Efisien, Aplikatif dan yang lebih utama lagi, pembelian equipment tersebut harus dengan harga yang kompetitif.</p>
         `
     },
     3: {
         category: 'Forklift Diesel',
         title: 'Forklift Rought Terain 3.5 Ton 4WD',
         content: `
-            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Forklift Rought Terain 3.5 Ton 4WD.</p>
-            <p>Forklift HELI adalah merk Forklift nomor 1 di China dengan teknologi terkini untuk medan yang berat.</p>
+            <p>Forklift HELI adalah merk Forklift nomor 1 di China dan nomor 7 di Top ranking 20 besar jajaran Forklift dunia.</p>
+            <p>Di semua lini kegiatan industri, tentunya memerlukan alat angkat untuk mempermudah kegiatan loading-unloading sehingga operasional pekerjaan tersebut menjadi Efektif, Efisien, Aplikatif dan yang lebih utama lagi, pembelian equipment tersebut harus dengan harga yang kompetitif.</p>
         `
     },
     4: {
         category: 'Wheel Loader',
         title: 'Wheel Loader LCM917',
         content: `
-            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Wheel Loader LCM917.</p>
-            <p>Wheel Loader adalah alat berat yang digunakan untuk mengangkut, memindahkan, dan memuat material dengan efisien.</p>
+            <p>Wheel Loader adalah alat berat yang digunakan untuk mengangkut, memindahkan material, pasir, tanah, batu bara atau puing-puing dari satu tempat ke tempat lainnya. Seperti sebuah traktor tetapi didepannya dipasang bucket berukuran besar. Bucket ini dihubungkan ke dua lengan di bagian samping. Bisa dipasang secara permanen atau knock down.</p>
+            <p>Alat ini bisa bervariasi bergantung pada kebutuhan. Alat Berat Loader ini bisa dipasang forklift juga. Hal ini bisa membantu untuk memindahkan material dari permukaan tanah.</p>
         `
     },
     5: {
         category: 'Forklift Electric',
         title: 'Forklift Electric Battery Acid 1,5-3 Ton',
         content: `
-            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Forklift Electric Battery Acid 1,5-3 Ton.</p>
-            <p>Forklift HELI adalah merk Forklift nomor 1 di China dengan teknologi battery acid yang handal dan efisien.</p>
+            <p>Forklift HELI adalah merk Forklift nomor 1 di China dan nomor 7 dalam Top ranking 20 besar jajaran forklift dunia.</p>
+            <p>Di semua lini kegiatan industri, tentunya memerlukan alat angkat untuk mempermudah kegiatan loading-unloading sehingga operasional pekerjaan tersebut menjadi Efektif, Efisien, Aplikatif dan yang lebih utama lagi, pembelian equipment tersebut harus dengan harga yang kompetitif.</p>
         `
     }
 };
