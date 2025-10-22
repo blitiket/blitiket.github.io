@@ -595,7 +595,7 @@ section {
         opacity: 1;
     }
     90% {
-        stroke-dashoffset: 600;
+        stroke-dashoffset: -600;
         opacity: 0;
     }
     100% {
