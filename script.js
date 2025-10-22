@@ -608,6 +608,91 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Product Detail Modal
+const productModal = document.getElementById('productModal');
+const productModalClose = document.getElementById('productModalClose');
+const productModalOverlay = document.getElementById('productModalOverlay');
+const productModalCategory = document.getElementById('productModalCategory');
+const productModalTitle = document.getElementById('productModalTitle');
+const productModalText = document.getElementById('productModalText');
+
+// Dummy products data (will be replaced with real data later)
+const productsData = {
+    1: {
+        category: 'Scissor Lift',
+        title: 'Scissor Lift LCM',
+        content: `
+            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Scissor Lift LCM.</p>
+            <p>Scissor lift LCM Scissorlift merupakan alat yang bisa digunakan untuk berbagai keperluan industri dan konstruksi.</p>
+        `
+    },
+    2: {
+        category: 'Forklift Diesel',
+        title: 'Forklift Big 5-10 Ton',
+        content: `
+            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Forklift Big 5-10 Ton.</p>
+            <p>Forklift HELI adalah merk Forklift nomor 1 di China dan telah terbukti kualitasnya di berbagai industri.</p>
+        `
+    },
+    3: {
+        category: 'Forklift Diesel',
+        title: 'Forklift Rought Terain 3.5 Ton 4WD',
+        content: `
+            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Forklift Rought Terain 3.5 Ton 4WD.</p>
+            <p>Forklift HELI adalah merk Forklift nomor 1 di China dengan teknologi terkini untuk medan yang berat.</p>
+        `
+    },
+    4: {
+        category: 'Wheel Loader',
+        title: 'Wheel Loader LCM917',
+        content: `
+            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Wheel Loader LCM917.</p>
+            <p>Wheel Loader adalah alat berat yang digunakan untuk mengangkut, memindahkan, dan memuat material dengan efisien.</p>
+        `
+    },
+    5: {
+        category: 'Forklift Electric',
+        title: 'Forklift Electric Battery Acid 1,5-3 Ton',
+        content: `
+            <p>Detail produk akan segera ditambahkan. Hubungi kami untuk informasi lebih lanjut tentang Forklift Electric Battery Acid 1,5-3 Ton.</p>
+            <p>Forklift HELI adalah merk Forklift nomor 1 di China dengan teknologi battery acid yang handal dan efisien.</p>
+        `
+    }
+};
+
+// Open product detail modal
+document.querySelectorAll('.product-detail-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const productId = button.getAttribute('data-product-id');
+        const product = productsData[productId];
+        
+        if (product) {
+            productModalCategory.textContent = product.category;
+            productModalTitle.textContent = product.title;
+            productModalText.innerHTML = product.content;
+            productModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+});
+
+// Close product modal
+function closeProductModal() {
+    productModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+productModalClose.addEventListener('click', closeProductModal);
+productModalOverlay.addEventListener('click', closeProductModal);
+
+// Close product modal on ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && productModal.classList.contains('active')) {
+        closeProductModal();
+    }
+});
+
 // Console welcome message
 console.log('%c Welcome to Raja Forklift Website! ', 'background: #ff6b00; color: white; font-size: 16px; padding: 10px;');
 console.log('%c Built with ❤️ using Native HTML, CSS, and JavaScript ', 'color: #666; font-size: 12px;');

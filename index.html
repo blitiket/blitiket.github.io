@@ -37,7 +37,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     
     <title>Raja Forklift - Distributor Forklift Terpercaya</title>
-    <link rel="stylesheet" href="styles.css?v=1.0.37">
+    <link rel="stylesheet" href="styles.css?v=1.0.38">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
@@ -184,7 +184,7 @@
                 <p class="section-subtitle">Pilihan produk yang ada di Raja Forklift</p>
             </div>
             <div class="products-grid">
-                <div class="product-card">
+                <div class="product-card" data-product="1">
                     <div class="product-badge badge-new">New</div>
                     <div class="product-image">
                         <img src="images/scissor-lift.webp" alt="Scissor Lift LCM">
@@ -193,10 +193,10 @@
                         <h3 class="product-name">Scissor Lift LCM</h3>
                         <span class="product-category">Scissor Lift</span>
                         <p class="product-desc">Scissor lift LCM Scissorlift merupakan alat yang bisa digunakan untuk…</p>
-                        <a href="#" class="btn btn-outline open-whatsapp-modal">Lihat Selengkapnya</a>
+                        <a href="#" class="btn btn-outline product-detail-btn" data-product-id="1">Lihat Selengkapnya</a>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-product="2">
                     <div class="product-badge badge-popular">Popular</div>
                     <div class="product-image">
                         <img src="images/forklift-diesel-big.webp" alt="Forklift Big 5-10 Ton">
@@ -205,10 +205,10 @@
                         <h3 class="product-name">Forklift Big 5-10 Ton</h3>
                         <span class="product-category">Forklift Diesel</span>
                         <p class="product-desc">Forklift HELI adalah merk Forklift nomor 1 di China dan…</p>
-                        <a href="#" class="btn btn-outline open-whatsapp-modal">Lihat Selengkapnya</a>
+                        <a href="#" class="btn btn-outline product-detail-btn" data-product-id="2">Lihat Selengkapnya</a>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-product="3">
                     <div class="product-badge badge-new">New</div>
                     <div class="product-image">
                         <img src="images/forklift-rough-terrain.webp" alt="Forklift Rought Terain 3.5 Ton 4WD">
@@ -217,10 +217,10 @@
                         <h3 class="product-name">Forklift Rought Terain 3.5 Ton 4WD</h3>
                         <span class="product-category">Forklift Diesel</span>
                         <p class="product-desc">Forklift HELI adalah merk Forklift nomor 1 di China dan…</p>
-                        <a href="#" class="btn btn-outline open-whatsapp-modal">Lihat Selengkapnya</a>
+                        <a href="#" class="btn btn-outline product-detail-btn" data-product-id="3">Lihat Selengkapnya</a>
                         </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-product="4">
                     <div class="product-badge badge-new">New</div>
                     <div class="product-image">
                         <img src="images/wheel-loader.webp" alt="Wheel Loader LCM917">
@@ -229,10 +229,10 @@
                         <h3 class="product-name">Wheel Loader LCM917</h3>
                         <span class="product-category">Wheel Loader</span>
                         <p class="product-desc">Wheel Loader adalah alat berat yang digunakan untuk mengangkut, memindahkan…</p>
-                        <a href="#" class="btn btn-outline open-whatsapp-modal">Lihat Selengkapnya</a>
+                        <a href="#" class="btn btn-outline product-detail-btn" data-product-id="4">Lihat Selengkapnya</a>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-product="5">
                     <div class="product-badge badge-terlaris">Terlaris</div>
                     <div class="product-image">
                         <img src="images/forklift-electric.webp" alt="Forklift Electric Battery Acid 1,5-3 Ton">
@@ -241,7 +241,7 @@
                         <h3 class="product-name">Forklift Electric Battery Acid 1,5-3 Ton</h3>
                         <span class="product-category">Forklift Electric</span>
                         <p class="product-desc">Forklift HELI adalah merk Forklift nomor 1 di China dan…</p>
-                        <a href="#" class="btn btn-outline open-whatsapp-modal">Lihat Selengkapnya</a>
+                        <a href="#" class="btn btn-outline product-detail-btn" data-product-id="5">Lihat Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -654,6 +654,21 @@
         </div>
     </div>
 
-    <script src="script.js?v=1.0.37"></script>
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="product-modal-overlay" id="productModalOverlay"></div>
+        <div class="product-modal-content">
+            <button class="product-modal-close" id="productModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="product-modal-body">
+                <div class="product-modal-category" id="productModalCategory"></div>
+                <h2 class="product-modal-title" id="productModalTitle"></h2>
+                <div class="product-modal-text" id="productModalText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.0.38"></script>
 </body>
 </html>

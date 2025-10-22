@@ -1816,6 +1816,143 @@ img.loaded {
     font-style: italic;
 }
 
+/* Product Detail Modal */
+.product-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-modal.active {
+    display: flex;
+}
+
+.product-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+.product-modal-content {
+    position: relative;
+    background: var(--white);
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.product-modal-close {
+    position: sticky;
+    top: 20px;
+    float: right;
+    margin: 20px 20px 0 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.product-modal-close:hover {
+    background: #e0e0e0;
+    transform: rotate(90deg);
+}
+
+.product-modal-body {
+    padding: 60px 60px 60px;
+    clear: both;
+}
+
+.product-modal-category {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.product-modal-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.product-modal-text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.product-modal-text p {
+    margin-bottom: 20px;
+}
+
+.product-modal-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 30px 0 15px;
+}
+
+.product-modal-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin: 25px 0 12px;
+}
+
+.product-modal-text ul,
+.product-modal-text ol {
+    margin: 15px 0 20px 25px;
+    padding-left: 20px;
+}
+
+.product-modal-text li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.product-modal-text strong {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.product-modal-text em {
+    font-style: italic;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
