@@ -1,3 +1,8 @@
+// Redirect www to non-www
+if (window.location.hostname === 'www.rajaforklift.id') {
+    window.location.href = 'https://rajaforklift.id' + window.location.pathname + window.location.search + window.location.hash;
+}
+
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mainNav = document.getElementById('mainNav');
