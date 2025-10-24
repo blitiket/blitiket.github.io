@@ -698,6 +698,23 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Email Link Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const emailLink = document.querySelector('.email-link');
+    if (emailLink) {
+        emailLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const to = 'rajaforklift.indonesia@gmail.com';
+            const cc = 'salessmg01@liftco.co.id';
+            const subject = 'Inquiry from Raja Forklift Website';
+            const body = 'Halo Raja Forklift,\n\nSaya ingin bertanya tentang:\n\n\n\nTerima kasih.';
+            
+            const mailtoLink = `mailto:${to}?cc=${cc}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        });
+    }
+});
+
 // Console welcome message
 console.log('%c Welcome to Raja Forklift Website! ', 'background: #ff6b00; color: white; font-size: 16px; padding: 10px;');
 console.log('%c Built with ❤️ using Native HTML, CSS, and JavaScript ', 'color: #666; font-size: 12px;');
