@@ -698,10 +698,10 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Email Link Handler
+// Email Link Handler - Handle all email links
 document.addEventListener('DOMContentLoaded', () => {
-    const emailLink = document.querySelector('.email-link');
-    if (emailLink) {
+    const emailLinks = document.querySelectorAll('.email-link');
+    emailLinks.forEach(emailLink => {
         emailLink.addEventListener('click', (e) => {
             e.preventDefault();
             const to = 'rajaforklift.indonesia@gmail.com';
@@ -712,7 +712,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const mailtoLink = `mailto:${to}?cc=${cc}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
         });
-    }
+    });
 });
 
 // Console welcome message

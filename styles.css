@@ -2929,3 +2929,19 @@ img.loaded {
         font-size: 16px;
     }
 }
+
+/* Email Link Styles */
+.email-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.email-link:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline !important;
+}
+
+.email-link:active {
+    transform: scale(0.98);
+}
